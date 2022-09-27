@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Frontend estático</title>
+
+  <!-- CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="css/estilos.css" rel="stylesheet">
+</head>
+<body class="px-2">
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Alejandro López</a>
+      <div class="d-flex flex-reverse" id="navbarCollapse">
+        <a href="https://www.facebook.com/ale.g4m3r" target="_blank">
+          <img class="redes-iconos" src="img/facebook-icon.png" alt="facebook icon">
+        </a>
+        <a href="https://www.instagram.com/ale.g4m3r/" target="_blank">
+          <img class="redes-iconos" src="img/instagram-icon.png" alt="instagram icon">
+        </a>
+        <a href="https://twitter.com/alejandro_g4m3r" target="_blank">
+          <img class="redes-iconos" src="img/twitter-icon.png" alt="twitter icon">
+        </a>
+        <button id="btn-login" class="btn btn-outline-success">Login</button>
+      </div>
+    </div>
+  </nav>
+  <header class="container">
+    <div class="row">
+      <div class="col-12 d-flex justify-content-center">
+        <img class="header-bg l	d-none d-sm-block" src="img/head-bg-l.png">
+        <img class="header-bg" src="img/head-bg.png">
+        <img class="header-bg r	d-none d-sm-block" src="img/head-bg-r.png">
+      </div>
+    </div>
+    <!-- Foto perfil centrada -->
+    <div id="perfil" class="row">
+      <div class="col-md-4"></div>
+      <div class="col-md-4 d-flex flex-column text-center">
+        <div id="foto-perfil" class="text-center">
+          <img src="img/foto-perfil.jpg" alt="foto de perfil"/>
+        </div>
+        <h2 class="mb-0">Alejandro López</h2>
+        <p class="sub mb-0">Full Stack developer</p>
+        <p>Buenos Aires (Argentina) <a href="#">Información de contacto</a></p>
+      </div>
+      <div class="col-md-4"></div>
+    </div>
+    <!-- -------------------- -->
+    <div class="row">
+      <div class="col-12 d-flex justify-content-center">
+        <button class="btn btn-primary mx-1">Tengo interés en</button>
+        <button class="btn btn-dark mx-1">Añadir Sección</button>
+        <button class="btn btn-dark mx-1">Más</button>
+      </div>
+    </div>
+    <hr>
+  </header>
+
+  <section id="acerca" class="container sec-contenedor px-3 py-3 mb-3">
+    <div class="d-flex justify-content-between">
+      <h2>Acerca de</h2>
+      <div>
+        <i class="bi-pencil-fill"></i>
+      </div>
+    </div>
+    <p class="mb-0 pb-0">
+      Soy un desarrollador con experiencia en varias areas, como HTML/CSS/JS, PHP, APIs REST,
+      tambien he desarrollado proyectos en Arduino (c/c++) + Raspberry PI. Con experiencia de trabajo en
+      entornos Linux desde sistemas embebidos a servidores.<br>
+      Estoy actualmente estudiando la carrera de Ingenieria de Sistemas en la UTN, y 
+      mi objetivo actual es adquirir conocimientos en el uso de frameworks tanto de frontend como de backend.<br>
+    </p>
+  </section>
+
+  <section id="experiencia" class="container sec-contenedor px-3 py-3 mb-3">
+    <div class="d-flex justify-content-between">
+      <h2>Experiencia</h2>
+      <div>
+        <i class="bi-plus-lg"></i>
+      </div>
+    </div>
+    <div class="row">
+      <div class="d-flex">
+        <div class="item-logo px-1 py-1"><img src="img/seg-logo.png" alt="logo segufer"></div>
+        <div class="d-flex flex-column item-texto ps-3 w-100">
+          <div class="d-flex justify-content-between">
+            <h3 class="my-0">Full Stack developer, C/C++ en sistemas embebidos</h3>
+            <div>
+              <i class="bi-pencil-fill"></i>
+              <i class="bi-trash3-fill"></i>
+            </div>
+          </div>
+          <h5>Segufer S.A. - Full time</h5>
+          <span class="sub-fecha">2015 - Actualidad</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="educacion" class="container sec-contenedor px-3 py-3 mb-3">
+    <div class="d-flex justify-content-between">
+      <h2>Educación</h2>
+      <div>
+        <i class="bi-plus-lg"></i>
+      </div>
+    </div>
+    <div class="row">
+      <div class="d-flex col-12">
+        <div class="d-none d-sm-block item-logo px-1 py-1"><img src="img/utn-logo.png" alt="logo utn"></div>
+        <div class="d-flex flex-column item-texto ps-3 w-100">
+          <div class="d-flex justify-content-between">
+            <h3 class="my-0">UTN - FRBA</h3>
+            <div>
+              <i class="bi-pencil-fill"></i>
+              <i class="bi-trash3-fill"></i>
+            </div>
+          </div>
+          <h5>Ingeniería en Sistemas</h5>
+          <span class="sub-fecha">2019 - Actualidad</span>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="d-flex col-12">
+        <div class="item-logo px-1 py-1"><img src="img/utu-logo.png" alt="logo utu"></div>
+        <div class="d-flex flex-column item-texto ps-3 w-100">
+          <div class="d-flex justify-content-between">
+            <h3 class="my-0">Instituto Tecnológico Superior Buceo (Montevideo - Uruguay)</h3>
+            <div>
+              <i class="bi-pencil-fill"></i>
+              <i class="bi-trash3-fill"></i>
+            </div>
+          </div>
+          <h5>Tecnólogo en Informática (Escuela Técnica)</h5>
+          <span class="sub-fecha">2005 - 2009</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="habilidades" class="container sec-contenedor px-3 py-3 mb-3">
+    <div class="d-flex justify-content-between">
+      <h2>Hard Skills & Soft Skills</h2>
+      <div>
+        <i class="bi-plus-lg"></i>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-4">
+        <p class="text-center">Diseño gráfico</p>
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped bg-warning"
+            role="progressbar" style="width: 60%" aria-valuenow="60"
+            aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <p class="text-center">HTML/CSS/JS</p>
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped bg-success"
+            role="progressbar" style="width: 75%" aria-valuenow="75"
+            aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <p class="text-center">PHP</p>
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped bg-success"
+           role="progressbar" style="width: 70%" aria-valuenow="70"
+           aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <p class="text-center">C/C++</p>
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped bg-success"
+           role="progressbar" style="width: 70%" aria-valuenow="70"
+           aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <p class="text-center">Python</p>
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped bg-danger"
+           role="progressbar" style="width: 30%" aria-valuenow="30"
+           aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <p class="text-center">Linux</p>
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped bg-success"
+          role="progressbar" style="width: 65%" aria-valuenow="65"
+          aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+      </div>
+      </div>
+      <div class="col-md-2"></div>
+    </div>
+
+  </section>
+
+  <section id="proyectos" class="container sec-contenedor px-3 py-3 mb-3">
+    <div class="d-flex justify-content-between">
+      <h2>Proyectos</h2>
+      <div>
+        <i class="bi-plus-lg"></i>
+      </div>
+    </div>
+    <div class="d-flex">
+      <div class="item-logo px-1 py-1"><img src="img/emro-logo.png" alt="emro logo"></div>
+      <div class="d-flex flex-column item-texto ps-3 w-100">
+        <div class="d-flex justify-content-between">
+          <h3>Emro Abastecimiento</h3>
+          <div>
+            <i class="bi-pencil-fill"></i>
+            <i class="bi-trash3-fill"></i>
+          </div>
+        </div>
+        <a href="https://emro.com.ar">Sitio del proyecto<i class="bi-link-45deg"></i></a>
+        <p>Desarrolle el software de las placas y servidor para un sistema de máquinas expendedoras
+          de productos de seguridad industrial basadas en Arduino y Raspberry-PI,
+          comunicandose las mismas mediantes APIs con un servidor desarrollado en PHP,
+          en el cual los clientes pueden consultar sus consumos,
+          definir permisos, dar de alta productos y usuarios, etc.<br>
+          Este proyecto tiene máquinas en las plantas de las principales empresas del pais como
+          <b>YPF</b>, <b>Grupo Exiros-Techint</b>, <b>Molinos Río de la Plata</b>,
+          <b>BUNGE</b>, y varios más.
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- JS -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
